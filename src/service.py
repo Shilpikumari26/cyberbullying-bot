@@ -19,8 +19,10 @@ def predict(text: str) -> str:
 # Test the service
 if __name__ == "__main__":
     samples = [
-        "You are such a loser!",
-        "Have a great day my friend!"
+        "hello how are you",
+        "i hate you. You look nigga",
+        ""
+       
     ]
     for s in samples:
         print(f"{s} --> {predict(s)}")

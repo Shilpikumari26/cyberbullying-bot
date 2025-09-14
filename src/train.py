@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
 from preprocess import clean_text
-
+\
 # -------------------------------
 # 1. Load dataset
 # -------------------------------
@@ -17,8 +17,8 @@ print(df.head())
 # -------------------------------
 # 2. Column names (adjust if needed)
 # -------------------------------
-text_col = "tweet_text"          # Column with tweet text
-label_col = "cyberbullying_type" # Column with labels
+text_col = "text"          # Column with tweet text
+label_col = "label" # Column with labels
 
 # -------------------------------
 # 3. Convert to binary labels
