@@ -252,8 +252,8 @@ After training, the console will show a classification report like:
 
 
               precision    recall  f1-score   support
-     bullying       0.90      0.88      0.89      1200
-         safe       0.87      0.89      0.88      1100
+    bullying       0.90      0.88      0.89      1200
+        safe       0.87      0.89      0.88      1100
     accuracy                           0.89      2300
    macro avg       0.89      0.89      0.89      2300
 weighted avg       0.89      0.89      0.89      2300
