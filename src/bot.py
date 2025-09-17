@@ -1,8 +1,10 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 from service import predict
-
-TOKEN = "8450785442:AAHoq0MfOU81Ujsvt1m-VCXBwai7WkfpGAU"
+from dotenv import load_dotenv
+import os
+load_dotenv()
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("👋 Hello! I am Cyberbullying Detection Bot.\nSend me a message, and I’ll classify it.")
