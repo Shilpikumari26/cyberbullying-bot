@@ -19,7 +19,7 @@ def predict(text: str) -> str:
 # Test the service
 if __name__ == "__main__":
     samples = [
-        "hello how are you",
+        "hello ",
         "i hate you. You look nigga",
         ""
        

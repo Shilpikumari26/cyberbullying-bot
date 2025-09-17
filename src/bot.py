@@ -13,10 +13,14 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if result == "bullying":
         response = "⚠️ Bullying detected!"
+        await update.message.reply_text(response)
+        
     else:
-        response = "✅ This message seems safe."
+       return
+       #response = "✅ This message seems safe."
+    
 
-    await update.message.reply_text(response)
+    
 
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
